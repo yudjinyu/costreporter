@@ -231,7 +231,7 @@ def consolidate_by_group(costs):
                 out[i]['values']['usage_quantity'] += \
                         float(cost['usage_quantity']['Amount'])
                 break
-        #else: # add to output
+        # else add to output
         if found == 0:
             tmp = {'group':cost['group'][0], 'values':{}}
             tmp['values'] = {'unblended_cost': float(cost['unblended_cost']['Amount']),
@@ -276,7 +276,7 @@ def print_usage():
            "\t-p --profile <profile name> - AWS profile name (can be used instead of -a and -s options)\n"
            "\t-a --accesskey <access key> - AWS access key\n"
            "\t-s --secretkey <secret key> - AWS secret key\n"
-           "\t-r --regions <region1,region2,...> - A list of AWS regions.  If this option is omitted, all regions will be checked.\n"
+           #"\t-r --regions <region1,region2,...> - A list of AWS regions.  If this option is omitted, all regions will be checked.\n"
            "\t-t --timerange - Time range as <start,end> time in format <YYYY-MM-DD>,<YYYY-MM-DD>\n"
            #"\t-h --human-readable <'k', 'm', or 'g'> display results in KB, MB, or GB.\n"
            "\t-j --json - Output in JSON format.\n"
@@ -372,8 +372,11 @@ if __name__ == "__main__":
             print("Error: reading credentials for profile %s." %p)
             os._exit(1)
 
-    if (len(rList) == 0):
-        rList = AWS_REGIONS
+    #if (len(rList) == 0):
+    #    rList = AWS_REGIONS
+    # values are not divided by region, instead use -d REGION flag
+    # so just use arbitrary region
+    rList = ["us-east-1"]
 
     if j == True and c == True:
         print("Error: cannot specify both -j and -c")
