@@ -88,7 +88,7 @@ AWS_REGIONS = [
 ABBRV = {
     "AWS CloudTrail": "CT",
     "AWS Data Transfer": "DT",
-    "AWS Key Managment Service": "KMS",
+    "AWS Key Management Service": "KMS",
     "AWS Support (Developer)": "SD",
     "Amazon DynamoDB": "DDB",
     "Amazon Elastic Block Store": "EBS",
@@ -288,8 +288,8 @@ def print_usage():
            "\tOne of the following three parameters are required:\n"
            "\t\t1. Both the -a and -s options.\n"
            "\t\t2. The -p option.\n"
-           "\t\t3. A valid " + FC_AWS_ENV + " enviornment variable.\n\n"
-           "\tDepending on the number of EBS volumes being analyzed, this tool make take several minutes to run.")
+           "\t\t3. A valid " + FC_AWS_ENV + " environment variable.\n\n"
+           "\tDepending on the number of EBS volumes being analyzed, this tool may take several minutes to run.")
 
 
 def parse_options(argv):

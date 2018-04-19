@@ -35,7 +35,7 @@ costreporter.py <options>
 	-i --interval <interval> - Dumps stats at <interval> granularity.  Valid values are MONTHLY (default) and DAILY.	One of the following three parameters are required:
 		1. Both the -a and -s options.
 		2. The -p option.
-		3. A valid AWS_DEFAULT_PROFILE enviornment variable.
+		3. A valid AWS_DEFAULT_PROFILE environment variable.
 
-	Depending on the number of EBS volumes being analyzed, this tool make take several minutes to run.
+	Depending on the number of EBS volumes being analyzed, this tool may take several minutes to run.
 ```
