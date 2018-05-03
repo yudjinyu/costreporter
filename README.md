@@ -2,7 +2,9 @@ Cost Reporter (Python 2.7)
 
 [This utility was written by FittedCloud](https://www.fittedcloud.com)
 
-For more information about the software, see the blog post:
+For more information about the software, see the following blog posts:
+
+[An Open Source Tool Using AWS Cost Explorer APIs for Reporting RI Recommendations, RI Coverage](https://www.fittedcloud.com/blog/open-source-tool-using-aws-cost-explorer-apis-reporting-ri-recommendations-ri-coverage/)
 
 [An Open Source tool using AWS Cost Explorer APIs for Reporting AWS Costs](https://www.fittedcloud.com/blog/open-source-tool-reporting-aws-costs/)
 
