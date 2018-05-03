@@ -231,13 +231,14 @@ def get_costs(a, s, rlist, start, end, dims, tags, granularity="MONTHLY"):
     groupbys = []
     if len(dims) > 0 or len(tags) > 0:
         dims = dims.split(",")
-        for d in dims:
-            groupbys.append({"Type":"DIMENSION", "Key":d})
+        if len(dims) > 0 and dims != [""]:
+            for d in dims:
+                groupbys.append({"Type":"DIMENSION", "Key":d})
 
         tags = tags.split(",")
-    if len(tags) > 0 and tags != [""]:
-        for t in tags:
-            groupbys.append({"Type":"TAG", "Key":t})
+        if len(tags) > 0 and tags != [""]:
+            for t in tags:
+                groupbys.append({"Type":"TAG", "Key":t})
 
     if len(groupbys) == 0: # group by service by default
         groupbys.append({"Type":"DIMENSION", "Key":"SERVICE"})
