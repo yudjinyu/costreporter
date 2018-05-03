@@ -9,9 +9,9 @@ For more information about the software, see the following blog posts:
 [An Open Source tool using AWS Cost Explorer APIs for Reporting AWS Costs](https://www.fittedcloud.com/blog/open-source-tool-reporting-aws-costs/)
 
 
-Installation:
-    1. Install Python 2.7 and pip2.7 if not already installed.
-    2. Install boto3 and botocore.  Use "sudo pip2.7 install boto3 botocore".
+Installation:  
+    1. Install Python 2.7 and pip2.7 if not already installed.  
+    2. Install boto3 and botocore.  Use "sudo pip2.7 install boto3 botocore".  
 
 Quick Start:
 ```
