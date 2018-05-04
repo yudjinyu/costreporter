@@ -111,7 +111,8 @@ ABBRV = {
 # simple check to see if string can be converted to float
 def isfloat(value):
   try:
-    float(value)
+    # have to cast to string first, else isfloat will return True for booleans
+    float(str(value))
     return True
   except ValueError:
     return False
