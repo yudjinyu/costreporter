@@ -1,4 +1,4 @@
-Cost Reporter (Python 2.7) TEST AGAIN
+Cost Reporter (Python 2.7)
 
 [This utility was written by FittedCloud](https://www.fittedcloud.com)
 
